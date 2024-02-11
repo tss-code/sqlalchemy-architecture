@@ -1,4 +1,4 @@
-# Flask SQLAlchemy Architecture
+# SQLAlchemy Architecture
 This project is a Flask application showcasing the use of SQLAlchemy for database management and interaction.
 
 Table of Contents
