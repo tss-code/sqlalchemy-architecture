@@ -1,0 +1,7 @@
+.vscode/
+docker/
+venv/
+.git/
+compose.yaml
+Dockerfile
+Makefile
