@@ -4,3 +4,4 @@ ALEMBIC_REVISION = alembic revision --autogenerate -m
 
 run-app:
     $(RUN)
+
