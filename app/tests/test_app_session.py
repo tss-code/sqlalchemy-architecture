@@ -1,7 +1,7 @@
 from unittest import TestCase
 
 from app.infra.db.connector import AppSession
-from app.models.recruitment import Company, Recruiter
+from app.models.recruitment.models import Company, Recruiter
 
 class AppSessionTestCase(TestCase):
     
@@ -13,7 +13,7 @@ class AppSessionTestCase(TestCase):
     
     def test_create_company(self):
         company = Company(
-            name="Created company"
+            name="New company"
         )
         self.app_session.add(company)
     

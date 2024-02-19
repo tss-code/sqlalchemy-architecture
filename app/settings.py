@@ -1,5 +1,4 @@
 import os
-from time import sleep
 from dotenv import dotenv_values
 
 BASE_DIR = os.path.abspath(os.path.dirname(__file__))

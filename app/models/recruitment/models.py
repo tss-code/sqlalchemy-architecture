@@ -1,12 +1,8 @@
-
+from app.models.base_model import BaseModel
 from uuid import uuid4
 from typing import List
-from sqlalchemy import String, ForeignKey
+from sqlalchemy import ForeignKey, String
 from sqlalchemy.orm import Mapped, mapped_column, relationship
-from sqlalchemy.orm import DeclarativeBase
-
-class BaseModel(DeclarativeBase):
-    pass
 
 class Company(BaseModel):
     __tablename__ = "companies"
@@ -19,6 +15,7 @@ class Company(BaseModel):
     @property
     def recruiters_amount(self):
         return len(self.recruiters)
+    
 
 class Recruiter(BaseModel):
     __tablename__ = "recruiters"
